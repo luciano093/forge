@@ -1,15 +1,7 @@
-import SwordSVG from '../_components/landing/assets/sword';
-import AbstractShapeLeft1SVG from './_components/assets/abstract-shape-left-1';
-import AbstractShapeLeft2SVG from './_components/assets/abstract-shape-left-2';
-import AbstractShapeRight1SVG from './_components/assets/abstract-shape-right-1';
-import AbstractShapeRight2SVG from './_components/assets/abstract-shape-right-2';
-import BinaryIconSVG from './_components/assets/binary-icon';
+import BackgroundSvgs from './_components/assets/background-svgs';
 import BlankCalendarSVG from './_components/assets/blank-calendar';
 import ChatBubbleSVG from './_components/assets/chat-bubble';
 import LaptopChargingSVG from './_components/assets/laptop-charging';
-import TerminalIconSVG from './_components/assets/terminal-icon';
-import TKNeonSVG from './_components/assets/tk-neon';
-import TKNeonSignSVG from './_components/assets/tk-neon-sign';
 import Button from './_components/button';
 import LinksHeader from './_components/links-header';
 
@@ -19,18 +11,46 @@ export default function links() {
 
       {/* Background SVGs */}
       <div className='relative z-0'>
+        <BackgroundSvgs />
+        
         {/* Left-side SVGs */}
-        <BinaryIconSVG className="absolute lg:top-[-130px] top-[-82px] lg:w-[780px] w-[420px] lg:h-[380px] h-[250px] left-0" viewBox="0 0 1167 500"/>
-        <AbstractShapeLeft1SVG className="absolute lg:top-[80px] top-[-80px] lg:w-[310px] w-[180px] lg:left-[210px] left-0" />
-        <TKNeonSVG className="absolute lg:top-[60px] top-[-80px] lg:w-[300px] w-[180px] left-0" />
-        <TKNeonSignSVG className="absolute top-[150px] lg:w-[310px] w-[180px] lg:left-[250px] left-0" />
-        <AbstractShapeLeft2SVG className="absolute lg:top-[640px] top-[540px] lg:w-[380px] w-[180px] lg:left-[340px] left-0" />
+        <svg className="absolute lg:top-[-130px] top-[-82px] lg:w-[780px] w-[420px] lg:h-[380px] h-[250px] left-0" viewBox="0 0 1167 500" overflow="visible">
+          <use href="#binary-icon" />
+        </svg>
+
+        <svg className="absolute lg:top-[80px] top-[-80px] lg:w-[310px] w-[180px] lg:left-[210px] left-0" overflow="visible" width="559" height="594" viewBox="0 0 559 594">
+          <use href="#abstract-shape-left-1" />
+        </svg>
+
+        <svg className="absolute lg:top-[60px] top-[-80px] lg:w-[300px] w-[180px] left-0" overflow="visible" width="691" height="1156" viewBox="0 0 691 1156">
+          <use href="#tk-neon" />
+        </svg>
+
+        <svg className="absolute top-[150px] lg:w-[310px] w-[180px] lg:left-[250px] left-0" overflow="visible" width="735" height="1004" viewBox="0 0 735 1004">
+          <use href="#tk-neon-sign" />
+        </svg>
+
+        <svg className="absolute lg:top-[640px] top-[540px] lg:w-[380px] w-[180px] lg:left-[340px] left-0" overflow="visible" width="849" height="430" viewBox="0 0 849 430">
+          <use href="#abstract-shape-left-2" />
+        </svg>
 
         {/* Right-side SVGs */}
-        <AbstractShapeRight1SVG className="absolute lg:top-[-200px] top-[-280px] right-0 lg:w-[330px] w-[180px]" />
-        <TerminalIconSVG className="absolute top-[-870px] lg:right-[450px] right-[15px] lg:w-[700px] w-[400px]" />
-        <AbstractShapeRight2SVG className="absolute lg:top-[510px] top-[360px] lg:right-[160px] right-[10px] lg:w-[220px] w-[80px]" />
-        <SwordSVG className="absolute lg:top-[170px] top-[-90px] lg:right-[430px] right-[-80px] w-[240px] lg:w-[480px]" transform="scale(-1,1)" />
+
+        <svg className="absolute lg:top-[-200px] top-[-280px] right-0 lg:w-[330px] w-[180px]" overflow="visible" width="525" height="748" viewBox="0 0 525 748">
+          <use href="#abstract-shape-right-1" />
+        </svg>
+
+        <svg className="absolute top-[-870px] lg:right-[450px] right-[15px] lg:w-[700px] w-[400px]" overflow="visible" width="1440" height="2746" viewBox="0 0 1440 2746">
+          <use href="#terminal-icon" />
+        </svg>
+
+        <svg className="absolute lg:top-[510px] top-[360px] lg:right-[160px] right-[10px] lg:w-[220px] w-[80px]" overflow="visible" width="235" height="493" viewBox="0 0 235 493">
+          <use href="#abstract-shape-right-2" />
+        </svg>
+
+        <svg className="absolute lg:top-[170px] top-[-90px] lg:right-[430px] right-[-80px] w-[240px] lg:w-[480px]" transform="scale(-1,1)" overflow="visible" width="926" height="1740" viewBox="0 0 926 1740">
+          <use href="#sword" />
+        </svg>
       </div>
 
       {/* Header */}
